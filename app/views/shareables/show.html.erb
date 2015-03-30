@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @shareable.title %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @shareable.link %>
+</p>
+
+<p>
+  <strong>Is public:</strong>
+  <%= @shareable.is_public %>
+</p>
+
+<%= link_to 'Edit', edit_shareable_path(@shareable) %> |
+<%= link_to 'Back', shareables_path %>
